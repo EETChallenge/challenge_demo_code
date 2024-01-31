@@ -65,12 +65,13 @@ class ThreeETplus_Eyetracking(Dataset):
             raise ValueError("Invalid split name")
 
         # Get the data file paths and target file paths
-        self.data = [os.path.join(data_dir,  f, f + ".h5") for f in filenames]
         if split == "train" or split == "val":
-            self.targets = [os.path.join(data_dir, f, "label.txt") for f in filenames]
+            self.data = [os.path.join(data_dir, "train", f, f + ".h5") for f in filenames]
+            self.targets = [os.path.join(data_dir, "train", f, "label.txt") for f in filenames]
         elif split == "test":
+            self.data = [os.path.join(data_dir, "test", f, f + ".h5") for f in filenames]
             # for test set, we load the placeholder labels with all zeros
-            self.targets = [os.path.join(data_dir, f, "label_zeros.txt") for f in filenames]
+            self.targets = [os.path.join(data_dir, "test", f, "label_zeros.txt") for f in filenames]
 
     def __getitem__(self, index: int) -> Tuple[Any, Any]:
         """
