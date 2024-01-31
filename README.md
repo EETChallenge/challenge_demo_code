@@ -173,9 +173,9 @@ Then open the browser and go to http://localhost:5000. You will see the followin
 
 ----
 
-##  **Prepare test results**
+##  **Prepare test results and submission**
 
-We provide a sample script to prepare your test results for submission. The script will generate a csv file for submitting to the challenge server.
+We provide a sample script (test.py) to prepare your test results for submission. The script will generate a submission.csv file for submitting to the Kaggle challenge server.
 
 **Please be aware** that if your data loading strategy is different from the standard strategy we provided, you need to modify the test set loader according to your method.
 
@@ -196,20 +196,13 @@ We request that you submit a ```submission_{submission-id}.csv``` file, which sh
 
 #### scoring functions
 There are two evaluation metrics for the challenge:
-**p10 accuracy** and **averaged euclidean distances**.
+**p10 accuracy** (used for leaderboard on Kaggle) and **averaged euclidean distances** (also taken into consideration for the report).
 
 The p10 accuracy is defined as the percentage of the predictions that are within 10 pixels of the ground truths (in the downsampled 80x60 spatial space). The averaged euclidean distance is defined as the average euclidean distance between the predictions and the ground truths. 
 
 #### inference speed will be taken into consideration
 We do not measure the latency of your method in the score board. But in the final report, the **inference speed (latency)** is required and is a **very important** metric for evaluating the final report. That is said if your method requires huge amount of computation, it is probably not a good method for practical real-time eye tracking applications.
 
-### Evalutation procedure
-
-We compute our metrics using ```calc_metrics.py``` and the prediction csv file you submitted. The ground truth will remain private.
-
-```
-python demo_code/calc_metrics.py --submission-id [YOUR-SUBMISSION-ID] --sr-dir ./results --gt-dir [PATH-TO-OUR-GT]
-```
 
 
 ----
