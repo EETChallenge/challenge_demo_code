@@ -1,15 +1,19 @@
 
-# [Event-based Eye Tracking Challenge](https://cvlai.net/ntire/2023/) @ CVPR 2024 Workshop [AIS: Vision, Graphics and AI for Streaming](https://ai4streaming-workshop.github.io/)
+# [Event-based Eye Tracking Challenge](https://EETChallenge.github.io/EET.github.io/) 
 
-
-**[Zuowen Wang<sup>1</sup>](https://scholar.google.com/citations?user=pdZLukIAAAAJ&hl=en), [Chang Gao<sup>2</sup>](https://scholar.google.com/citations?user=sQ9N7dsAAAAJ&hl=en), [Shih-Chii Liu<sup>1</sup>](https://scholar.google.com/citations?user=XYkPvZUAAAAJ&hl=en), [Qinyu Chen<sup>1,3</sup>](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)**
+**[Zuowen Wang<sup>1</sup>](https://scholar.google.com/citations?user=pdZLukIAAAAJ&hl=en), [Chang Gao<sup>2</sup>](https://scholar.google.com/citations?user=sQ9N7dsAAAAJ&hl=en), [Zongwei Wu<sup>3</sup>](https://scholar.google.fr/citations?user=3QSALjX498QC&hl=en&oi=en), [Shih-Chii Liu<sup>1</sup>](https://scholar.google.com/citations?user=XYkPvZUAAAAJ&hl=en), [Qinyu Chen<sup>1,4</sup>](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)**
 
 
 [1. Sensors Group, Institute of Neuroinformatics, UZH/ETH Zurich](https://sensors.ini.ch/)
 
 [2. EMI Lab, TU Delft](https://www.tudemi.com/)
 
-[3. Leiden Institute of Advanced Computer Science, Leiden University](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)
+[3. Computer Vision Lab, University of Wurzburg](https://www.informatik.uni-wuerzburg.de/computervision/)
+
+[4. Leiden Institute of Advanced Computer Science, Leiden University](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)
+
+
+## @ CVPR 2024 Workshop [AI for Streaming](https://ai4streaming-workshop.github.io/)
 
 
 <!-- 
