@@ -1,15 +1,19 @@
 
-# [Event-based Eye Tracking Challenge](https://cvlai.net/ntire/2023/) @ CVPR 2024 Workshop [AIS: Vision, Graphics and AI for Streaming](https://ai4streaming-workshop.github.io/)
+# [Event-based Eye Tracking Challenge](https://EETChallenge.github.io/EET.github.io/) 
 
-
-**[Zuowen Wang<sup>1</sup>](https://scholar.google.com/citations?user=pdZLukIAAAAJ&hl=en), [Chang Gao<sup>2</sup>](https://scholar.google.com/citations?user=sQ9N7dsAAAAJ&hl=en), [Shih-Chii Liu<sup>1</sup>](https://scholar.google.com/citations?user=XYkPvZUAAAAJ&hl=en), [Qinyu Chen<sup>1,3</sup>](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)**
+**[Zuowen Wang<sup>1</sup>](https://scholar.google.com/citations?user=pdZLukIAAAAJ&hl=en), [Chang Gao<sup>2</sup>](https://scholar.google.com/citations?user=sQ9N7dsAAAAJ&hl=en), [Zongwei Wu<sup>3</sup>](https://scholar.google.fr/citations?user=3QSALjX498QC&hl=en&oi=en), [Shih-Chii Liu<sup>1</sup>](https://scholar.google.com/citations?user=XYkPvZUAAAAJ&hl=en), [Qinyu Chen<sup>1,4</sup>](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)**
 
 
 [1. Sensors Group, Institute of Neuroinformatics, UZH/ETH Zurich](https://sensors.ini.ch/)
 
 [2. EMI Lab, TU Delft](https://www.tudemi.com/)
 
-[3. Leiden Institute of Advanced Computer Science, Leiden University](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)
+[3. Computer Vision Lab, University of Wurzburg](https://www.informatik.uni-wuerzburg.de/computervision/)
+
+[4. Leiden Institute of Advanced Computer Science, Leiden University](https://scholar.google.com/citations?user=enuSO2YAAAAJ&hl=en)
+
+
+## @ CVPR 2024 Workshop [AI for Streaming](https://ai4streaming-workshop.github.io/)
 
 
 <!-- 
@@ -224,9 +228,3 @@ We do not measure the latency of your method in the score board. But in the fina
 
 - Zuowen Wang (zuowen@ini.uzh.ch)
 - Qinyu Chen (q.chen@liacs.leidenuniv.nl)
-
-## References
-
-[1] [Mobile AI & AIM 2022 Challenge: Efficient and Accurate Quantized Image Super-Resolution on Mobile NPUs](https://arxiv.org/pdf/2211.05910.pdf)
-
-[2] [NTIRE 2022 Efficient Super-Resolution Challenge](https://openaccess.thecvf.com/content/CVPR2022W/NTIRE/papers/Li_NTIRE_2022_Challenge_on_Efficient_Super-Resolution_Methods_and_Results_CVPRW_2022_paper.pdf)
