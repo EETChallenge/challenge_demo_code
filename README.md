@@ -45,6 +45,7 @@
 
 ----
 
+
 ## About the Challenge
 Developing an event-based eye-tracking system presents significant opportunities in diverse fields, notably in consumer electronics and neuroscience. Human eyes exhibit rapid movements, occasionally surpassing speeds of 300°/s. This necessitates using [event cameras](https://www.youtube.com/watch?v=6xOmo7Ikwzk&t=80s&ab_channel=Sony-Global) capable of high-speed sampling and tracking. 
 
@@ -61,7 +62,17 @@ This is instrumental in augmenting the immersive experience in AR/VR and expandi
 This challenge aims to develop an **event-based eye-tracking system for precise tracking of rapid eye movements** to produce lighter and more comfortable devices for a better user experience. Simultaneously, it promises to provide novel insights into neuroscience and cognitive research, deepening our understanding of these domains.
 
 ----
+## Start Training!
+We provide a handy training script for you to start with. Simply install the dependencies in the environment.yml file with conda and run the following command:
+```python
+python3 train.py --config sliced_baseline.json
+```
+It should give a decent baseline performance. Play around with the hyperparameters and see if you can improve the performance! 
 
+For generating the results for submission we also provide a test script test.py. Please refer to the section [Prepare test results and submission](#Prepare-test-results-and-submission) for more details.
+
+
+----
 ## **Dataset Description**
 There are 13 subjects in total, each having 2-6 recording sessions. The subjects are required to perform 5 classes of activities: random, saccades, read text, smooth pursuit and blinks. Figure 2 visualizes one real recording sample by making the raw events into event frames. The total data volume is approximately 1 GB in the compressed .h5 form. 
 
@@ -81,9 +92,7 @@ The event recordings are provided in the form of .h5 files of raw events. Each e
 
 These raw events are loaded with
 ```python
-train_data_orig = ThreeETplus_Eyetracking(save_to=args.data_dir, split="train", \
-                transform=transforms.Downsample(spatial_factor=factor), 
-                target_transform=label_transform)
+train_data_orig = ThreeETplus_Eyetracking(save_to=args.data_dir, split="train", transform=transforms.Downsample(spatial_factor=factor), target_transform=label_transform)
 ```
 'transform' and 'target_transform' essentially do the following:
 
@@ -119,8 +128,7 @@ post_slicer_transform = transforms.Compose([
 We then pass these transformations to the Tonic SlicedDataset class to post process the loaded raw events:
 ```python
 train_data = SlicedDataset(train_data_orig, train_slicer, \
-  transform=post_slicer_transform, metadata_path= \
-    f"./metadata/3et_train_tl_{args.train_length}_ts{args.train_stride}_ch{args.n_time_bins}")
+  transform=post_slicer_transform, metadata_path=f"./metadata/3et_train_tl_{args.train_length}_ts{args.train_stride}_ch{args.n_time_bins}")
 ```
 
 The SlicedDataset has a convenient function to cache the indices of how the raw events are sliced, when argument metadata_path is provided not None. But be careful if you provided the same metadata_path for different slicing strategies, the SlicedDataset will ignore the slicing parameters and use the old indices, causing unexpected results.
@@ -160,7 +168,7 @@ We conducted benchmarking of the dataset with several baseline methods. The base
 
 | Method                                                                                    | GPU            | Averaged Distance  | P10 Accuracy       |  Inference Latency (bs=1)    | 
 |-------------------------------------------------------------------------------------------|----------------|----------|------------------|----------|
-|CNN_GRU | RTX 3090 24 Gb | 6.387    |0.843  | -    |
+|CNN_GRU | RTX 3090 24 Gb | 6.387    |0.623  | -    |
 
 
 
@@ -196,7 +204,7 @@ If you trained your model with mlflow, the checkpoint should be saved in mlruns 
 
 ## **Evaluation of your submission**
 
-We request that you submit a ```submission_{submission-id}.csv``` file, which should contain two columns 'x' and 'y'. Notice that the range of x is [0, 80] and y is [0, 60].
+We request that you submit a ```submission.csv``` file, which should contain two columns 'x' and 'y'. Notice that the range of x is [0, 80] and y is [0, 60].
 
 #### scoring functions
 There are two evaluation metrics for the challenge:
