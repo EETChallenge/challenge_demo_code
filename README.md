@@ -168,7 +168,7 @@ We conducted benchmarking of the dataset with several baseline methods. The base
 
 | Method                                                                                    | GPU            | Averaged Distance  | P10 Accuracy       |  Inference Latency (bs=1)    | 
 |-------------------------------------------------------------------------------------------|----------------|----------|------------------|----------|
-|CNN_GRU | RTX 3090 24 Gb | 6.387    |0.623  | -    |
+|CNN_GRU | RTX 3090 24 Gb | 8.99    |0.63  | -    |
 
 
 
