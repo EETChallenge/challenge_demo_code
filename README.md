@@ -25,9 +25,7 @@
 - Dataset release soon (mid-June) -->
 <!-- - Presentation June 18th NTIRE workshop. -->
 
-<details>
-<summary><b>Citation</b></summary>
-<p><code>
+
 Please cite our challenge report and 3ET paper if you find our work useful!
   
 @inproceedings{wang2024event,
