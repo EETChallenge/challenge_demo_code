@@ -28,6 +28,14 @@
 <details>
 <summary><b>Citation</b></summary>
 <p><code>
+Please cite our paper and report if you find our work useful!
+@inproceedings{wang2024event,
+  title={Event-based eye tracking. AIS 2024 challenge survey},
+  author={Wang, Zuowen and Gao, Chang and Wu, Zongwei and Conde, Marcos V and Timofte, Radu and Liu, Shih-Chii and Chen, Qinyu and Zha, Zheng-Jun and Zhai, Wei and Han, Han and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5810--5825},
+  year={2024}
+}
 
 @INPROCEEDINGS{3et,
   author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
@@ -222,6 +230,14 @@ We do not measure the latency of your method in the score board. But in the fina
 ## Citation and  acknowledgement
 
 ```
+@inproceedings{wang2024event,
+  title={Event-based eye tracking. AIS 2024 challenge survey},
+  author={Wang, Zuowen and Gao, Chang and Wu, Zongwei and Conde, Marcos V and Timofte, Radu and Liu, Shih-Chii and Chen, Qinyu and Zha, Zheng-Jun and Zhai, Wei and Han, Han and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5810--5825},
+  year={2024}
+}
+
 @inproceedings{chen20233et,
   title={3et: Efficient Event-based Eye Tracking Using a Change-based Convlstm Network},
   author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
@@ -230,6 +246,7 @@ We do not measure the latency of your method in the score board. But in the fina
   year={2023},
   organization={IEEE}
 }
+
 ```
 
 ## Contact
