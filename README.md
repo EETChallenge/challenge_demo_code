@@ -28,7 +28,8 @@
 <details>
 <summary><b>Citation</b></summary>
 <p><code>
-Please cite our paper and report if you find our work useful!
+Please cite our challenge report and 3ET paper if you find our work useful!
+  
 @inproceedings{wang2024event,
   title={Event-based eye tracking. AIS 2024 challenge survey},
   author={Wang, Zuowen and Gao, Chang and Wu, Zongwei and Conde, Marcos V and Timofte, Radu and Liu, Shih-Chii and Chen, Qinyu and Zha, Zheng-Jun and Zhai, Wei and Han, Han and others},
