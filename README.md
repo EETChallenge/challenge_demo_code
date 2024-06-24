@@ -25,9 +25,9 @@
 - Dataset release soon (mid-June) -->
 <!-- - Presentation June 18th NTIRE workshop. -->
 
+## Citation and  acknowledgement
 
-Please cite our challenge report and 3ET paper if you find our work useful!
-  
+```
 @inproceedings{wang2024event,
   title={Event-based eye tracking. AIS 2024 challenge survey},
   author={Wang, Zuowen and Gao, Chang and Wu, Zongwei and Conde, Marcos V and Timofte, Radu and Liu, Shih-Chii and Chen, Qinyu and Zha, Zheng-Jun and Zhai, Wei and Han, Han and others},
@@ -36,22 +36,15 @@ Please cite our challenge report and 3ET paper if you find our work useful!
   year={2024}
 }
 
-@INPROCEEDINGS{3et,
+@inproceedings{chen20233et,
+  title={3et: Efficient Event-based Eye Tracking Using a Change-based Convlstm Network},
   author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
-  booktitle={2023 IEEE Biomedical Circuits and Systems Conference (BioCAS)}, 
-  title={3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network}, 
+  booktitle={2023 IEEE Biomedical Circuits and Systems Conference (BioCAS)},
+  pages={1--5},
   year={2023},
-  pages={1-5},
-  doi={10.1109/BioCAS58349.2023.10389062}}
-  
-</code></p>
-
-</details> 
-
-<br>
-
-----
-
+  organization={IEEE}
+}
+```
 
 ## About the Challenge
 Developing an event-based eye-tracking system presents significant opportunities in diverse fields, notably in consumer electronics and neuroscience. Human eyes exhibit rapid movements, occasionally surpassing speeds of 300°/s. This necessitates using [event cameras](https://www.youtube.com/watch?v=6xOmo7Ikwzk&t=80s&ab_channel=Sony-Global) capable of high-speed sampling and tracking. 
@@ -226,27 +219,6 @@ We do not measure the latency of your method in the score board. But in the fina
 
 ----
 
-## Citation and  acknowledgement
-
-```
-@inproceedings{wang2024event,
-  title={Event-based eye tracking. AIS 2024 challenge survey},
-  author={Wang, Zuowen and Gao, Chang and Wu, Zongwei and Conde, Marcos V and Timofte, Radu and Liu, Shih-Chii and Chen, Qinyu and Zha, Zheng-Jun and Zhai, Wei and Han, Han and others},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={5810--5825},
-  year={2024}
-}
-
-@inproceedings{chen20233et,
-  title={3et: Efficient Event-based Eye Tracking Using a Change-based Convlstm Network},
-  author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
-  booktitle={2023 IEEE Biomedical Circuits and Systems Conference (BioCAS)},
-  pages={1--5},
-  year={2023},
-  organization={IEEE}
-}
-
-```
 
 ## Contact
 
