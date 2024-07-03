@@ -14,7 +14,7 @@
 
 
 ## @ CVPR 2024 Workshop [AI for Streaming](https://ai4streaming-workshop.github.io/)
-
+## The dataset can be downloaded from [Kaggle](https://www.kaggle.com/competitions/event-based-eye-tracking-ais2024/data) 
 
 <!-- 
 🚀 🚀 🚀 **News**
